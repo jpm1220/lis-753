@@ -1,0 +1,67 @@
+body {
+  background-color: lightsteelblue;
+}
+
+h1, h2 {
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+p, li { 
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+img {
+  border: 2px solid black;
+}
+
+#introduction-header,
+#interests-header,
+#pets-header,
+#previous-exercises-header
+{
+  color: purple;
+}
+
+#pets-header,
+#previous-exercises-header
+{
+  color: green;
+}
+
+.introduction { 
+  width: 1000px;
+  height: 200px;
+  padding: 10px;
+  margin: 8px 4px;
+  border: 8px solid black;
+}
+
+.interests { 
+  width: 900px;
+  height: 400px;
+  padding: 10px;
+  margin: 8px 4px;
+  border: 6px solid red;
+}
+
+.pets { 
+  width: 800px;
+  height: 200px;
+  padding: 10px;
+  margin: 8px 4px;
+  border: 4px solid green;
+}
+
+.previous-exercises { 
+  width: 700px;
+  height: 400px;
+  padding: 10px;
+  margin: 8px 4px;
+  border: 2px solid magenta;
+}
