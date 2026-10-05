@@ -1,0 +1,22 @@
+.table-container {
+    width: fit-content;
+    border: 2px solid black;
+    text-align: left; 
+    padding: 8px;   
+}
+
+td {
+    padding: 4px;
+}
+
+.form-container {
+    padding: 8px;
+}
+
+.form-name, 
+.form-email,
+.form-program,
+.form-in-person,
+.form-online {
+    margin-bottom: 16px;
+}

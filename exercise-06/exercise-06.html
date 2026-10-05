@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Exercise 5</title>
+  </head>
+  <body>   
+    <h2>Library programs</h2>
+    <hr>
+    <h3>Upcoming programs</h3><br>
+    <div class="table-container">
+        <table>
+            <caption>Library Programs</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Program</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Audience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Community Book Club</td>
+                    <td>Oct. 8</td>
+                    <td>6:30 PM</td>
+                    <td>Room A</td>
+                    <td>Adults</td>
+                </tr>
+                <tr>
+                    <td>Family Story Time</td>
+                    <td>Oct. 10</td>
+                    <td>10:00 AM</td>
+                    <td>Children's Room</td>
+                    <td>Families</td>
+                </tr>
+                <tr>
+                    <td>Genealogy</td>
+                    <td>Oct. 12</td>
+                    <td>2:00 PM</td>
+                    <td>Room B</td>
+                    <td>Adults</td>
+                </tr>
+                <tr>
+                    <td>Intro to 3D Printing</td>
+                    <td>Oct. 15</td>
+                    <td>6:00 PM</td>
+                    <td>Makerspace</td>
+                    <td>Teens & Adults</td>
+                </tr>
+                <tr>
+                    <td>Local History Talk</td>
+                    <td>Oct. 18</td>
+                    <td>1:00 PM</td>
+                    <td>Auditorium</td>
+                    <td>Everyone</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3>Register for a program</h3>
+    <hr>
+    <div class="form-container">
+        <form>
+            <div class="form-name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter name">
+            </div>
+            <div class="form-email">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Enter e-mail">
+            </div>
+            <div class="form-program">
+                <label for="program">Select a program</label>
+                <select name="program">
+                    <option value="book-club">Community Book Club</option>
+                    <option value="story-time">Family Story Time</option>
+                    <option value="genealogy-workshop">Genealogy Workshop</option>
+                    <option value="3d-printing">Intro to 3D Printing</option>
+                    <option value="history-talk">Local History Talk</option>
+                </select>
+            </div>
+            <div class="form-in-person">
+                <input type="radio" name="in-person" value="In person">
+                <label for="in-person">In person</label>
+            </div>
+            <div class="form-online">
+                <input type="radio" name="online" value="Online">
+                <label for="online">Online</label>
+            </div>
+            <div class="form-submit">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <h4>Questions?</h4>
+    <h4>Contact the library...</h4>
+  </body>
+</html>
