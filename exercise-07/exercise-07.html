@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercise 7</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Makerspace Programs</h1>
+        <p>Programs, individual scheduling, and support</p>
+      </div>
+      <nav class="navbar" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="program-register-container">
+        <div class="programs-container">
+          <h2>Upcoming Programs</h2><br>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Location</th>
+                <th scope="col">Audience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3D Printing Workshop</td>
+                <td>Oct. 8</td>
+                <td>6:30 PM</td>
+                <td>Lab A</td>
+                <td>Adults & Teens</td>
+              </tr>
+              <tr>
+                <td>Paper Circuits for Kids</td>
+                <td>Oct. 10</td>
+                <td>10:00 AM</td>
+                <td>Lab B</td>
+                <td>Children</td>
+              </tr>
+              <tr>
+                <td>Intro to Generative AI</td>
+                <td>Oct. 12</td>
+                <td>2:00 PM</td>
+                <td>Conference Room</td>
+                <td>Adults</td>
+              </tr>
+              <tr>
+                <td>Intro to 3D Printin</td>
+                <td>Oct. 15</td>
+                <td>6:00 PM</td>
+                <td>Makerspace</td>
+                <td>Teens & Adults</td>
+              </tr>
+            </tbody>
+          </table>
+          <br><h3>About these programs</h3><br>
+          <p class="about-programs">        
+            Please register on the library homepage prior to attendance.<br>
+            No prior Makerpsace experience required to attend any of the programs. <br>
+            All materials will be provided.
+            <br><br><br><br>
+          </p>
+        </div>
+        <div class="form-container">
+          <h2>Register</h2><br>
+          <p>Choose a program to attend</p>
+          <form>
+            <div class="form-name">
+              <label for="name">Name</label><br>
+              <input type="text" name="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-email">
+              <label for="email">E-mail</label><br>
+              <input type="email" name="email" placeholder="Enter e-mail" required>
+            </div>
+            <div class="form-program">
+              <label for="program">Program</label><br>
+              <select name="program" required>
+                <option value="" disabled selected hidden>Select a program</option>
+                <option value="book-club">Community Book Club</option>
+                <option value="story-time">Family Story Time</option>
+                <option value="genealogy-workshop">Genealogy Workshop</option>
+                <option value="3d-printing">Intro to 3D Printing</option>
+                <option value="history-talk">Local History Talk</option>
+              </select>
+            </div> 
+            <div class="form-attendance">
+              <label id="attendance">Attendance</label><br><br>
+              <input type="radio" name="attendance" value="In person" required>
+              <label for="in-person">In person</label><br><br>
+              <input type="radio" name="attendance" value="Online" required>
+              <label for="online">Online</label>
+            </div>
+            <div class="form-submit">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>    
+      </div>
+    </main>    
+  </body>
+  <footer>
+    <ul>
+      <li>Eureka Public Library</li>
+      <li>100 Milky Way Drive</li>
+      <li>555-123-4567</li>
+      <li>Open 10AM-6PM daily</li>
+    </ul>
+
+  </footer>
+</html>
