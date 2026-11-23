@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>    
+    <title>Exercise 12</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Makerspace Programs</h1>
+        <p>Programs, individual scheduling, and support</p>
+      </div>
+      <nav class="navbar" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="programs-container" aria-label="Upcoming Programs Section">
+        <h2>Upcoming Programs</h2><br>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Program</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Location</th>
+              <th scope="col">Audience</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3D Printing Workshop</td>
+              <td>Oct. 8</td>
+              <td>6:30 PM</td>
+              <td>Lab A</td>
+              <td>Adults & Teens</td>
+              <td><button type="button" class="details-button" data-target="3d-printing">View details</button></td>
+            </tr>
+            <tr>
+              <td>Paper Circuits for Kids</td>
+              <td>Oct. 10</td>
+              <td>10:00 AM</td>
+              <td>Lab B</td>
+              <td>Children</td>
+              <td><button type="button" class="details-button" data-target="paper-circuits">View details</button></td>
+            </tr>
+            <tr>
+              <td>Intro to Generative AI</td>
+              <td>Oct. 12</td>
+              <td>2:00 PM</td>
+              <td>Conference Room</td>
+              <td>Adults</td>
+              <td><button type="button" class="details-button" data-target="intro-to-ai">View details</button></td>
+            </tr>
+            <tr>
+              <td>Jewelry Making</td>
+              <td>Oct. 15</td>
+              <td>6:00 PM</td>
+              <td>Lab B</td>
+              <td>Teens</td>
+              <td><button type="button" class="details-button" data-target="jewelry-making">View details</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <br><h3>About these programs</h3><br>
+        <div class="about-programs">       
+          <p>Program details</p><br>
+          <div id="3d-printing" class="program-details" hidden>
+            <h3>3D-Printing Workshow Details</h3>
+            <p>Learn the basics of Tinkercad and create a simple model to print</p>
+          </div> 
+          <div id="paper-circuits" class="program-details" hidden>
+            <h3>Paper Circuits for Kids Details</h3>
+            <p>Make a holiday card that lights up that you can take home!</p>
+          </div> 
+          <div id="intro-to-ai" class="program-details" hidden>
+            <h3>Intro to Generative AI Details</h3>
+            <p>Learn the basics of how to use generative AI safely and effectively</p>
+          </div>           
+          <div id="jewelry-making" class="program-details" hidden>
+            <h3>Jewelry Making Details</h3>
+            <p>Design your own piece of jewelry and build it!</p>
+          </div>       
+          <br><br><br><br>
+        </div>
+      </div>
+      <div class="form-container" aria-label="Registration Section">
+        <h2>Register</h2><br>
+        <p>Choose a program to attend</p>
+        <form id="registration-form">
+          <div class="form-name">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+          </div>
+          <div class="form-email">
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter e-mail" required>
+          </div>
+          <div class="form-program">
+            <label for="program">Program</label><br>
+            <select name="program" id="registration-program" required>
+              <option value="" disabled selected hidden>Select a program</option>
+              <option value="3D Printing Workshop">3D Printing Workshop</option>
+              <option value="Paper Circuits for Kids">Paper Circuits for Kids</option>
+              <option value="Intro to Generative AI">Intro to Generative AI</option>
+              <option value="Jewelry Making">Jewelry Making</option>
+            </select>
+          </div> 
+          <div class="form-attendance">
+            <label id="attendance">Attendance</label><br><br>
+            <input type="radio" id="in-person" name="attendance" value="In person" required>
+            <label for="in-person">In person</label><br><br>
+            <input type="radio" id="online" name="attendance" value="Online" required>
+            <label for="online">Online</label>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="Register">
+          </div>
+          <br><div hidden id="confirmation-message"></div>
+        </form>
+      </div>    
+    </main>    
+  </body>
+  <footer>
+    <ul>
+      <li>Eureka Public Library</li>
+      <li>100 Milky Way Drive</li>
+      <li>555-123-4567</li>
+      <li>Open 10AM-6PM daily</li>
+    </ul>
+  </footer>
+</html>
